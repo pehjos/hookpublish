@@ -97,7 +97,11 @@ useEffect(() => {
   });
  
 }, []);
-
+useEffect(() => {
+   OneSignal.init({
+     appId: "YOUR-APP-ID-HERE"
+   });
+ }, []);
 const theme=useTheme()
 
 return (
