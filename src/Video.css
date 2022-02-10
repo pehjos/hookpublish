@@ -1,0 +1,19 @@
+
+
+
+
+.video{
+    margin-top: -20px;
+    
+    
+    }
+    @media(min-width:700px){
+    
+        .video{
+            margin-top: 0;
+            
+            
+            }
+    
+    }
+ 

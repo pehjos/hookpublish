@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+
+
+.topics{
+color:#0f0101;
+font-family: 'Open Sans', sans-serif;
+margin:10px;
+}
+.topics_container__ch_head{
+justify-content: space-between;
+display: flex;
+align-items: center;
+margin:10px;
+
+}
+.topics_container__heda{
+display: flex;
+align-items: center
+
+}
+.topics_discovery{
+display: flex;
+align-items:center;
+font-size:16px;
+color:teal;
+font-family: 'Open Sans', sans-serif;
+}
+.topics_discovery>.MuiSvgIcon-root{
+display: flex;
+align-items:center;
+color:orange;
+font-size:16px;
+}
+.topics_discovery>p{
+display: flex;
+align-items:center;
+
+}
+.topics_container__ch{
+background-color:white;
+width: 100%;
+overflow: hidden;
+/* overflow-y: scroll;
+overflow-x:hidden; */
+
+border-radius: 6px;
+}
+#wg-api-football-fixture-modal{
+
+margin:10px;
+
+z-index: 100;
+
+
+
+}
+
+.api_football_modal_close{
+z-index: 100;
+
+margin-top:20px; 
+
+}
+.sportsheader1{
+color:#fff;
+margin:10px;
+}
+.topics_container__c{
+background-color:white;
+background-image:linear-gradient(rgba(80, 3, 3, 0.26),rgba(19, 16, 16, 0.466)),url("https://assets.manutd.com/AssetPicker/images/0/0/10/126/687707/Legends-Profile_Cristiano-Ronaldo1523460877263.jpg");
+overflow-y: scroll;
+overflow-x:hidden;
+
+height:400px;
+background-size: cover;
+border-radius: 6px;
+}
+.topics_container__{
+background-color:white;
+background-image:linear-gradient(rgba(80, 3, 3, 0.26),rgba(19, 16, 16, 0.466)),url("https://assets.manutd.com/AssetPicker/images/0/0/10/126/687707/Legends-Profile_Cristiano-Ronaldo1523460877263.jpg");
+overflow-y: scroll;
+overflow-x:hidden;
+height:800px;
+background-size: cover;
+border-radius: 6px;
+}
+.topics_container__heda>.MuiSvgIcon-root{
+font-size:16px;
+color:#2196f3;
+}
+.topics_stories{
+font-family: 'Open Sans', sans-serif;
+font-size:16px;
+color:#a31173;      
+}
+.topics_container__ch_content{
+display: flex;
+align-items: center;
+margin: 10px;
+
+justify-content:space-between;
+border-bottom:1px solid lightgrey;
+}
+.topics_container__ch_img>img{
+height:100px;
+width:100px;
+border-radius: 10px;
+object-fit:cover;
+}
+.topics_container__ch_text>h4{
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+overflow:hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+text-overflow:ellipsis;
+-webkit-box-orient: vertical;
+white-space: wrap;
+justify-content: baseline;
+font-size: inherit;
+line-height: inherit;
+
+color: inherit;
+overflow-wrap: anywhere;
+flex-wrap: wrap;
+align-items: flex-start;
+
+flex: 1;text-align: left;
+margin: 10px;
+
+
+}
+.topics_container__ch_footer{
+display: flex;
+align-items: center;
+
+margin-top: 10px;;
+}
+.topics_container__ch_footer>p{
+color: #2196f3;
+margin:2px;
+font-family: 'Open Sans', sans-serif;
+overflow:hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+text-overflow:ellipsis;
+-webkit-box-orient: vertical;
+white-space: wrap;
+justify-content: baseline;
+font-size: inherit;
+line-height: inherit;
+font-weight: 500;
+width: 90px;
+
+overflow-wrap: anywhere;
+flex-wrap: wrap;
+align-items: flex-start;
+
+flex: 1;text-align: left;
+
+}
+.topics_container__ch_footer>h6{
+color: tomato;
+font-family: 'Open Sans', sans-serif;
+}
+.topics_container__ch_text>p{
+
+font-family: 'Open Sans', sans-serif;
+overflow:hidden;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+text-overflow:ellipsis;
+-webkit-box-orient: vertical;
+white-space: wrap;
+justify-content: baseline;
+font-size: inherit;
+line-height: inherit;
+font-weight: 500;
+color: inherit;
+
+overflow-wrap: anywhere;
+flex-wrap: wrap;
+align-items: flex-start;
+
+flex: 1;text-align: left;
+margin: 10px;
+
+
+}
+.topics_container__icons{
+
+display: flex;
+align-items: center;
+justify-content:space-between;
+margin:4px;
+}
+.topics_icons>.MuiSvgIcon-root{
+font-size: 16px;
+color: #2196f3;
+}
+.topics_container__ch_img>.MuiSvgIcon-root{
+
+color: grey;
+}
+.card_horiz{
+width: 230px;
+position: absolute;
+border-radius:10px;
+
+z-index: 100;
+margin-left: -45%;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.horis_sections{
+display: flex;
+align-items: center;
+
+}
+.horis_sections>.MuiSvgIcon-root{
+margin: 7px;
+color: rgb(13, 15, 15);
+}
+.horis_sections>p{
+margin: 10px;
+color: rgb(44, 46, 46);
+}
+.horis_sections>a{
+display: flex;
+align-items: center;
+text-decoration: none;
+margin: 10px;
+color: rgb(44, 46, 46);  
+}
+.horis_sections>a>.MuiSvgIcon-root>{
+margin: 7px;
+color: rgb(13, 15, 15);
+}
+.horis_sections>a>p{
+margin: 10px;
+color: rgb(44, 46, 46);
+}
+.topics_forward{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:10px;
+    }
+    .topics_forward>.MuiSvgIcon-root{
+color:grey
+
+    }

@@ -1,0 +1,79 @@
+.carosel{
+margin:10px ;
+
+}
+
+
+.control-arrow{
+display:none;
+
+}
+.carousel * {
+   
+    box-sizing: border-box;
+    border-radius: 10px;;
+  }
+.carousel .slide .legend {
+
+   
+    bottom: 40px;
+   
+    width: 90%;
+    border-radius: 3px;
+    background: rgba(14, 13, 13, 0.377);
+   
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    opacity: 0.25;
+    transition: opacity .35s ease-in-out;
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    justify-content: baseline;
+height: 130px;
+   z-index: 60;
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    flex: 1;text-align: left;
+;
+}
+.legend{
+  color: white;
+
+}
+.img {
+ 
+    content: "";
+    display: inline-block;
+    height: 200px;
+    opacity: 1;
+    border-radius:10px;
+    top: 0;
+    width: 100%;
+    /*z-index: -1;*/
+    animation: 30s ease 0s normal none infinite running zoomin;
+    -webkit-animation: 30s ease 0s normal none infinite running zoomin;
+    -o-animation: 30s ease 0s normal none infinite running zoomin;
+    -moz--o-animation: 30s ease 0s normal none infinite running zoomin;
+  }
+  
+  @keyframes zoomin {
+      0% { transform: scale(1.5, 1.5);
+        border-radius:10px;
+    }
+      50% { transform: scale(1, 1);
+        border-radius:10px;
+    }
+      100% { transform: scale(1.5, 1.5);
+        border-radius:10px;
+    }
+  }

@@ -1,0 +1,283 @@
+.Profile{
+justify-content: baseline;
+display: flex;
+align-items: center;
+font-family: 'Commissioner', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-weight: 600;
+background-color:  #2196f3;
+position: fixed;
+z-index: 100;
+width: 100%;
+}
+.profile__ico>.MuiSvgIcon-root{
+color: white;
+margin: 10px;
+
+}
+.user__name{
+color: white;
+margin: 10px;
+
+}
+.profile_img{
+position: absolute;
+margin-top: 44px;
+background-color: white;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+justify-content: center;
+
+}
+.profile_cover{
+display: flex;
+align-items:center;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 300px;
+
+}
+.profile_cover>img{
+
+width: 100%;
+height: 300px;
+object-fit: fill;
+border-radius:5px;
+}
+.profile_cover{
+display: flex;
+align-items:center;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+border-radius:10px;
+
+
+
+}
+.user__name>h3{
+    color: white;
+    margin:2px;
+    font-family: 'Open Sans', sans-serif;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    justify-content: baseline;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 500;
+    width: 90px;
+    
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    flex: 1;text-align: left;
+
+}
+.post{
+
+margin-top: 470px;
+position: absolute;
+
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+justify-content: center;
+
+}
+.profile_profile{
+margin-top: -50px;
+display: flex;
+align-items:center;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+border-radius:10px;
+
+
+}
+
+.profile_profile>p{
+
+display: flex;
+align-items:center;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+border-radius:10px;
+
+font-weight: 600;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #333;
+font-size: 17px;
+
+
+}
+.profile_profile>h5{
+
+display: flex;
+align-items:center;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+border-radius:10px;
+
+font-weight: 600;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: teal;
+font-size: 19px;
+text-shadow: 2px 2px 4px  ;
+
+
+
+color: teal;
+margin:2px;
+font-family: 'Open Sans', sans-serif;
+overflow:hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+text-overflow:ellipsis;
+-webkit-box-orient: vertical;
+white-space: wrap;
+justify-content: baseline;
+font-size: inherit;
+line-height: inherit;
+
+
+font-size:19px;
+overflow-wrap: anywhere;
+flex-wrap: wrap;
+align-items: flex-start;
+
+flex: 1;text-align: left;
+}
+.profile_profile>h6{
+text-shadow: 2px 2px 4px  ;
+display: flex;
+align-items:center;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+border-radius:10px;
+
+font-weight: 600;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: orange;
+font-size: 18px;
+text-transform: uppercase;
+
+}
+.profile_profile>h6>h5{
+
+display: flex;
+align-items:center;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+border-radius:10px;
+
+font-weight: 600;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #2196f3;
+
+font-size: 18px;
+
+
+}
+.profile_profile>.MuiAvatar-root{
+width:90px;
+height: 90px;
+
+
+
+
+}
+.privacy{
+display: flex;
+
+
+flex-direction: column;
+
+background-color: white;
+font-size: 20px;
+}
+.privacy>p{
+display: flex;
+
+
+flex-direction: column;
+margin: 10px;
+background-color: white;
+font-size: 20px;
+}
+.privacy>h3{
+display: flex;
+
+
+flex-direction: column;
+margin: 10px;
+background-color: white;
+font-size: 20px;
+    }
+
+.help{
+
+display: flex;
+
+height:100vh; 
+flex-direction: column;
+
+background-color: white;
+font-size: 20px;
+
+}
+.help>p{
+display: flex;
+
+
+flex-direction: column;
+margin-top: 60%;
+background-color: white;
+font-size: 20px;
+}
+.settings{
+
+
+    display: flex;
+
+    height:100vh; 
+    flex-direction: column;
+    
+    background-color: white;
+    font-size: 20px;
+
+
+}
+.settings>p{
+    display: flex;
+    
+    text-align: center;
+    flex-direction: column;
+    margin-top: 70%;
+    background-color: white;
+    font-size: 29px;
+    }
+    .settings>h5{
+        display: flex;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+       margin: 20px;
+       border-radius:30px;
+       color: white;
+        background-color: #2196f3;
+        font-size: 25px;
+        }
