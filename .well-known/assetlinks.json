@@ -1,1 +1,6 @@
 
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.hookwal.twa",
+               "sha256_cert_fingerprints": ["9B:90:8F:67:46:4A:C4:61:2A:7D:C3:A2:24:B4:F3:06:0E:10:FC:FD:CF:AD:81:22:0B:C3:6B:F6:0E:99:DF:96"] }
+}]
