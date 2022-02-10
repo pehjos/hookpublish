@@ -99,7 +99,7 @@ useEffect(() => {
 }, []);
 useEffect(() => {
    OneSignal.init({
-     appId: "YOUR-APP-ID-HERE"
+     appId: "a7df134b-b37d-4514-81ca-c83655d40380"
    });
  }, []);
 const theme=useTheme()
