@@ -7,7 +7,7 @@ import Appbar from './Appbar'
 import BottomNav from './BotoMnav'
 import About from './About'
 import Help from './Help'
-
+import User from './User'
 import VolleyLive from './VolleyLive'
 import Star from './Stars'
 import Settings from './Settings'
@@ -97,11 +97,7 @@ useEffect(() => {
   });
  
 }, []);
-useEffect(() => {
-   OneSignal.init({
-     appId: "a7df134b-b37d-4514-81ca-c83655d40380"
-   });
- }, []);
+
 const theme=useTheme()
 
 return (
@@ -129,6 +125,10 @@ return (
 </Route>
 <Route path="/profile/:id">
 <Profile/>
+<BottomNav/>
+</Route>
+<Route path="/user/:id">
+<User/>
 <BottomNav/>
 </Route>
 <Route path="/radio">

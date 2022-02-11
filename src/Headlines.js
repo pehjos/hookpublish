@@ -136,7 +136,7 @@ const handleSharing = async () => {
 <img  src={urlToImage}/>
 <div className="topics_forward">
 {stated1?(<CloseTwoToneIcon onClick={ShowWatch1}/>):(<MoreHoriz onClick={ShowWatch1}/>)}
-<RedoRounded onClick={handleSharing}/>
+<ShareOutlined style={{fontSize:'13'}} onClick={handleSharing}/>
 </div>
 {stated1?(<div onClick={ShowWatch1} className="card_horiz">
 <div onClick={addNote}  className="horis_sections">

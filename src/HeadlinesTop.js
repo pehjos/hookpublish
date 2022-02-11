@@ -18,7 +18,7 @@ function Headlines({post,url,src,id,title,description,author,publishedAt,urlToIm
   const user=JSON.parse(localStorage.getItem("profile"))
   const history=useHistory()
   const openPost=()=>{
-history.push(`/post/${post._id}`)
+    history.push(`/user/${post._id}`)
 }
   const [{basket},dispatch]=useStateValue();
   const [state,setState] =useState(false)
@@ -118,7 +118,7 @@ const handleSharing = async () => {
 };
 const openUser=()=>
 {
-history.push(`/profile/${user.result.user?.uid}`)
+  history.push(`/user/${post._id}`)
 }
 
   return <div>
@@ -139,7 +139,7 @@ history.push(`/profile/${user.result.user?.uid}`)
 <img  src={urlToImage}/>
 <div className="topics_forward">
 {stated1?(<CloseTwoToneIcon onClick={ShowWatch1}/>):(<MoreHoriz onClick={ShowWatch1}/>)}
-<RedoRounded onClick={handleSharing}/>
+<ShareOutlined style={{fontSize:'13'}} onClick={handleSharing}/>
 </div>
 {stated1?(<div onClick={ShowWatch1} className="card_horiz">
 <div onClick={addNote}  className="horis_sections">
