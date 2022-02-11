@@ -216,9 +216,9 @@ _id={post._id}
  <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p>
 
 <ApiNews/>
-
-<LocalApi/>
 <Notag/>
+<LocalApi/>
+
 </div>
 
   <div className="apis">
