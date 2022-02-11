@@ -178,7 +178,7 @@ history.push("/auth")
 const openProfile=()=>
 {
 history.push(`/user/${post._id}`)
-// window.location.reload(true)
+window.location.reload(true)
 }
 
 //  share

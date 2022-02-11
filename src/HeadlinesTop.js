@@ -119,6 +119,7 @@ const handleSharing = async () => {
 const openUser=()=>
 {
   history.push(`/user/${post._id}`)
+  window.location.reload(true)
 }
 
   return <div>
