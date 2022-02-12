@@ -32,8 +32,8 @@ dispatch(getPost(id));
 
 if (!post) return null;
 
-const recommendedPosts = posts.filter(({ _id }) => _id !== post._id);
-console.log(recommendedPosts,"new")
+const recommendedPosts = posts.filter(({ tags }) => tags == post.tags);
+
 
 const openPost = (_id) => history.push(`/post/${_id}`);
 const scrolltop= () => window.scrollTo({top:"0",behavior:"smooth"})
