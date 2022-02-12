@@ -18,7 +18,7 @@ function Headlines({post,url,src,id,title,description,author,publishedAt,urlToIm
   const user=JSON.parse(localStorage.getItem("profile"))
   const history=useHistory()
   const openPost=()=>{
-    history.push(`/user/${post._id}`)
+    history.push(`/post/${post._id}`)
 }
   const [{basket},dispatch]=useStateValue();
   const [state,setState] =useState(false)
