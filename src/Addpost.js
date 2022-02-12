@@ -404,9 +404,9 @@ onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
 <input type="radio" id="male" name="gender" value="EntertainmenNews"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
 <label for="male">Entertainment</label><br/>
-{/* <input type="radio" id="male" name="gender" value="video"
+<input type="radio" id="male" name="gender" value="video"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
-<label for="male">video</label><br/> */}
+<label for="male">video</label><br/>
 <input type="radio" id="male" name="gender" value="gallery"
 onChange={(e)=>setPostData({...postData, tags:e.target.value})}/>
 <label for="male">Gallery</label><br/>
