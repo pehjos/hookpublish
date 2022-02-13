@@ -122,7 +122,11 @@ onClick={toglesliders(slider,false)}>
 
 return (
 <div className="cardimg" > 
-
+<div className="header">
+<Avatar size='small' src={newsrc} />
+{isPlaying?(<marquee>{title}</marquee>):""}
+{isPlaying?(<p>{cur}</p>):""}
+</div>
 <Rightmobileslider className="drawer" open={state.right} anchor="bottom"
 onClose={toglesliders("right",false)}>
 {sliderlists("right ")}
@@ -132,23 +136,16 @@ onClose={toglesliders("right",false)}>
 {isPlaying &&handleVideoProgress?"":(
 (<PlayCircleOutlineRounded
   onClick={togglePlay}
-  style={{fontSize:40,borderRadius:50,backgroundColor:"#2196f3",color:"whitesmoke",}} className="play"/>)
+  style={{fontSize:40,borderRadius:50,backgroundColor:"#2196f3",color:"whitesmoke",marginTop:'50'}} className="play"/>)
 )}
-<div className="header">
-<Avatar size='small' src={newsrc} />
 
-{isPlaying?(<marquee>{title}</marquee>):""}
-{/* <p onClick={toglesliders("right",true)}>{newtype}</p> */}
-
-
-{isPlaying?(<p>{cur}</p>):""}
-</div>
 <video  src={videosrc}
  ref={videoRef}
  onClick={togglePlay}
 onTimeUpdate={handleTimeUpdate}   
 preload="metadata"
 />
+
 <div className="tile1">
 
 <div className="tileright1">
@@ -184,21 +181,6 @@ value={speed}
 
 </div>
 
-
-{/* <div className="tileleft">
-<div className="tilelefticons">
-<ShareOutlined/>
-
-</div>
-<div className="tilelefticons">
-<CloudDownload/>
-<p>{numeral(comment).format('0 a')}</p>
-</div>
-<div className="tilelefticons">
-<RemoveRedEyeOutlined/>
-<p>{numeral(love).format('0 a')}</p>
-</div>
-</div> */}
 </div>
 </div>
 )
