@@ -7,9 +7,9 @@ function Buttons() {
 <Link to="/sports">
 <p>Sports</p>
 </Link>
-{/* <Link to="/finance">
-<p>Finance</p>
-</Link> */}
+<Link to="/allnews">
+<p>Stories</p>
+</Link>
 <Link to="science">
 <p>Science</p>
 </Link>

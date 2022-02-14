@@ -10,6 +10,7 @@ import Help from './Help'
 import User from './User'
 import VolleyLive from './VolleyLive'
 import Star from './Stars'
+import AllNews from './AllNews'
 import Settings from './Settings'
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
@@ -405,6 +406,31 @@ return (
 
 <div className="app__bodyfeed">
 <Science/>
+<Star/>
+<Quickac/>
+</div>
+
+<div className="app__bodyadsence">
+
+<Adsence/>
+
+
+</div>
+
+</div>
+</Route>
+
+<Route path="/allnews">
+<Appbar/>
+
+<div className="app__body">
+<div className="app__bodynav">
+<Desktopnav/>
+
+</div>
+
+<div className="app__bodyfeed">
+<AllNews/>
 <Star/>
 <Quickac/>
 </div>
