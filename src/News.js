@@ -1,6 +1,7 @@
 
 import React, { useEffect ,useState} from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
+import AdSense from 'react-adsense';
 import './news.css'
 import Carosel from './Carosel'
 import Topics from './Topics'
@@ -218,17 +219,15 @@ _id={post._id}
 <ApiNews/>
 <Notag/>
 <LocalApi/>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1446397159695121"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
-     data-ad-client="ca-pub-1446397159695121"
-     data-ad-slot="2132932064"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{/* responsive and native ads */}
+<AdSense.Google
+  client='ca-pub-1446397159695121'
+  slot='2132932064'
+  style={{ display: 'block' }}
+  layout='in-article'
+  format='fluid'
+  layoutKey='-gw-1+2a-9x+5c'
+/>
 </div>
 
   <div className="apis">
