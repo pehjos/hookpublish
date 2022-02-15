@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://hookwal.com/news</loc>
+  <loc>https://hookwal.com/sports</loc>
+  <loc>https://hookwal.com/technology</loc>
+  <loc>https://hookwal.com/discover</loc>
+  <loc>https://hookwal.com/entertainment</loc>
+  <loc>https://hookwal.com/allnews</loc>
+  <loc>https://hookwal.com/science</loc>
+  <loc>https://hookwal.com/world</loc
+  <loc>https://hookwal.com/auth</loc>
+  <loc>https://hookwal.com/privacy</loc>
+  <loc>https://hookwal.com/about</loc>
+  <loc>https://hookwal.com/user/:id</loc>
+  <loc>https://hookwal.com/</loc>
+  <lastmod>2022-02-15T01:33:18+00:00</lastmod>
+</url>
+
+
+</urlset>
