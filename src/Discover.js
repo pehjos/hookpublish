@@ -35,7 +35,7 @@ return <div className="discover">
 </div>
     {recommendedPosts.map((post,index)=>(  
     
-    index<3&&(
+    index<70&&(
 <div className="discover_main">   
 <div className="discover_image">
 <img src={post.image} alt={post.title}/>

@@ -95,7 +95,8 @@ seeMore="see more..."
 articlebody={post1.description}
 ProviderUrl="url"
 time={post1.createdAt}
-share=""
+photo={post1.photo}
+
 love={post1.likeCount}
 comment={post1.comments.length}
 />

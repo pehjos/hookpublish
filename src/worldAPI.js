@@ -66,6 +66,7 @@ articlebody={post.description}
 ProviderUrl="url"
 time={post.createdAt}
 share=""
+photo={post.photo}
 love={post.likeCount}
 _id={post._id}
 comment={post.comments.length}
