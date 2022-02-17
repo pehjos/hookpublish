@@ -386,8 +386,22 @@ onClose={togleslider("right",false)}>
 </Rightmobileslider >
 </div> */}
 
-<div className="footline">
 
+<div className="card__footericonscontent3">
+<div className="foot">
+<AccessTime/>
+<Moment fromNow>{time}</Moment>
+</div>
+<IconButton onClick={handleSharing}>
+<ShareOutlined/>
+<p>{share}</p>
+</IconButton>
+</div>
+
+
+
+{/* 
+<div className="footline">
 <div className="card__footericonscontent3">
 <div className="foot">
 <AccessTime/>
@@ -411,7 +425,7 @@ onClose={togleslider("right",false)}>
 
 </div>
 
-</div>
+</div> */}
 
 </div>
 {stated?(<Close onClick={ShowWatch} className="close"/>):""}
