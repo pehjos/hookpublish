@@ -19,7 +19,7 @@ return (
 <div className="topics_container__ch">
 
 {recommendedPosts.map((post,index)=>( 
-       index<3&&(
+       index<2&&(
         post.tags!=="top"?"":(
 <Headlines
 urlToImage={post.image}

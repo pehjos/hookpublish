@@ -40,7 +40,7 @@ return (
 
 
 { data && data.articles.map((post1,index) => (
-       index<3&&(
+       index<2&&(
 <Headlines
 urlToImage={post1.urlToImage}
 title={post1.title}
