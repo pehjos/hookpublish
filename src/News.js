@@ -1,7 +1,6 @@
 
 import React, { useEffect ,useState} from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
-import AdSense from 'react-adsense';
 import './news.css'
 import Carosel from './Carosel'
 import Topics from './Topics'
@@ -112,6 +111,33 @@ return (
  <p>Todays Trending News</ p>
  
   </div> */}
+  {recommendedPosts.map((post,index)=>(  
+    
+    index<3&&(
+      
+      // post.tags!=="Local News"?"":(
+<CardPost post={post} setCurrentId={setCurrentId} key={post._id}
+newsrc={post.name}
+newtype={post.accountType}
+newstypeimg ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYd2zxgqMSBA62puWUurhS_MLaOmpoOEoQZA&usqp=CAU"
+Url="url"
+newimage={post.image}
+video={post.video}
+title={post.title}
+description={post.description}
+tag={post.tags}
+seeMore="see more..."
+articlebody={post.description}
+ProviderUrl="url"
+time={post.createdAt}
+share=""
+photo={post.photo}
+love={post.likeCount}
+comment={post.comments.length}
+_id={post._id}
+/>
+
+  )))}
    <Topics/>
   
 <Carosel/>
@@ -166,33 +192,7 @@ isLoading?(<div className="loader__news"> */}
      </div> */}
 
     </div>
-    {recommendedPosts.map((post,index)=>(  
     
-    index<3&&(
-      
-      // post.tags!=="Local News"?"":(
-<CardPost post={post} setCurrentId={setCurrentId} key={post._id}
-newsrc={post.name}
-newtype={post.accountType}
-newstypeimg ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYd2zxgqMSBA62puWUurhS_MLaOmpoOEoQZA&usqp=CAU"
-Url="url"
-newimage={post.image}
-video={post.video}
-title={post.title}
-description={post.description}
-tag={post.tags}
-seeMore="see more..."
-articlebody={post.description}
-ProviderUrl="url"
-time={post.createdAt}
-share=""
-photo={post.photo}
-love={post.likeCount}
-comment={post.comments.length}
-_id={post._id}
-/>
-
-  )))}
   <Button/>
     <HeaderSports/>
     < Gallery/>
@@ -205,29 +205,21 @@ _id={post._id}
 
 
   <TechHeader/>
-  <Storybtn/>
+  {/* <Storybtn/> */}
  
-<p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p>
+{/* <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p> */}
    {/* <LiveScoreAPi/>  */}
    <CoinBase/> 
   {/* <Ghanaprimier/> */}
   <ScienceHeader/>
 
 
- <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p>
+ {/* <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p> */}
 
 <ApiNews/>
 <Notag/>
 <LocalApi/>
-{/* responsive and native ads */}
-<AdSense.Google
-  client='ca-pub-1446397159695121'
-  slot='2132932064'
-  style={{ display: 'block' }}
-  layout='in-article'
-  format='fluid'
-  layoutKey='-gw-1+2a-9x+5c'
-/>
+
 </div>
 
   <div className="apis">

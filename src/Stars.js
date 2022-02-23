@@ -77,7 +77,7 @@ function Stars() {
        <div className="stars">
           <div className="star__pages">
             <div className="star__textf">
-          <NavLink activeClassName="link"className="li" to="/news"> <HomeOutlined/>
+          <NavLink activeClassName="link"className="li" to="/"> <HomeOutlined/>
           <p>Home</p>
           </NavLink>
          

@@ -14,19 +14,19 @@ history.push(`/post/${post._id}`)
     const {posts,isLoading}=useSelector((state)=>state.posts)
 const recommendedPosts = posts?.filter(({ tags }) => tags== 'discovery');
 
-return <div className="carosel">
+return <div >
 
 {/* showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb} */}
-<Carousel showArrows={false} interval="10000" autoPlay={true} infiniteLoop={true} showThumbs={false} showIndicators={false} showArrows={true}>
+
 {recommendedPosts.map((post,index)=>( 
-       index<6&&(
+       index<1&&(
       
-<div onClick={() => history.push(`post/${post._id}`)}>
-<img  className="img"  src={post.image}/>
-<p  className="legend">{post.title}</p>
+<div className="carosel" onClick={() => history.push(`post/${post._id}`)}>
+<img    src={post.image}/>
+<p>{post.title}</p>
 </div>
 )))}
-</Carousel>
+
 
 
 </div>;

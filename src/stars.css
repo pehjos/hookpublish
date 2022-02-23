@@ -49,6 +49,8 @@ text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     justify-content:space-between;
+    -webkit-tap-highlight-color: red; 
+    -webkit-tap-highlight-color: transparent; 
        } 
 
   .link{
