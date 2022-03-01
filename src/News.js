@@ -194,7 +194,7 @@ isLoading?(<div className="loader__news"> */}
     </div>
     
   <Button/>
-    <HeaderSports/>
+    {/* <HeaderSports/> */}
     < Gallery/>
 
 </div>
@@ -204,14 +204,14 @@ isLoading?(<div className="loader__news"> */}
   {/* <LiveScoreAPi/> */}
 
 
-  <TechHeader/>
+  {/* <TechHeader/> */}
   {/* <Storybtn/> */}
  
 {/* <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p> */}
    {/* <LiveScoreAPi/>  */}
-   <CoinBase/> 
+   {/* <CoinBase/>  */}
   {/* <Ghanaprimier/> */}
-  <ScienceHeader/>
+  {/* <ScienceHeader/> */}
 
 
  {/* <p style={{textAlign: 'left',color:'#2196f3',marginLeft:'10px'}}>SUGESTED FOR YOU</p> */}
