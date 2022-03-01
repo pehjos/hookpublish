@@ -26,7 +26,8 @@ NotificationsNoneOutlined,
 Search,
 ImageOutlined,
 ShoppingCartOutlined,
-NotificationsNoneRounded
+NotificationsNoneRounded,
+AdjustOutlined
 } from '@material-ui/icons'
 import {
 
@@ -210,7 +211,7 @@ return (
   <Link to="/discover">
 < Explore/>
 <div className="trendlive">
-<p >UKRAINE</p>
+<p ><AdjustOutlined style={{fontSize: 10,color:'red'}} className="blinking"/> UKRAINE</p>
 </div>
 </Link>
 <Menu  onClick={togleslider("right",true)}  />

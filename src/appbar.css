@@ -301,10 +301,10 @@ margin-top:-20px;
      .trendlive>p{
        font-size:10px; 
        text-decoration: none;
-       color: #2196f3;
+       color: red;
        position: absolute;
        margin-top:-10px;
-       margin-left:-10px;
+       margin-left:-20px;
        font-weight:bold;
      }
    
