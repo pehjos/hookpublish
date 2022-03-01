@@ -1,0 +1,13 @@
+.country{
+    margin: 10px;
+    background-color: white;
+    
+    font-size: 20px;
+    }
+    .country_card>p{
+    font-size:19px;
+    cursor:pointer;
+    background-color: rgba(210, 180, 140, 0.123);
+    margin: 10px;
+    color: #2196f3;
+    }

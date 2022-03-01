@@ -12,7 +12,7 @@ import Footerbar from './Footerbar'
 import {makeStyles} from '@material-ui/core/styles'
 import Navmenu from './Navmenu'
 import {getPostsBySearch,getPosts} from './actions/Post'
-import logo from './logo.png'
+
 
 import {
 
@@ -200,7 +200,7 @@ return (
 <>
 <div className="topsearch">
 
-<img src="https://lh3.googleusercontent.com/6cCCYRSmULmmEiY8xF9SFzawKIQNYznJzVEqGkTMQmh2sOK-2eLiBZ95GEuVPBDOffv4v_ftiXcj424U2Q=s239-c"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7zs4NFX0z6W3-6lNbY8wEdGI2dY60dqrcYA&usqp=CAU"/>
 <div className="btnSearch">
 <input value={search}onChange={(e)=>setSearch(e.target.value) } name="search"
         onKeyPress={handleKeyPress} type="text" placeholder="Search..."/>
@@ -209,6 +209,9 @@ return (
 <Hidden smUp={true}>
   <Link to="/discover">
 < Explore/>
+<div className="trendlive">
+<p >UKRAINE</p>
+</div>
 </Link>
 <Menu  onClick={togleslider("right",true)}  />
 

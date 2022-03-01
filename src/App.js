@@ -8,9 +8,9 @@ import BottomNav from './BotoMnav'
 import About from './About'
 import Help from './Help'
 import User from './User'
+import Country from './Country'
 import VolleyLive from './VolleyLive'
 import Star from './Stars'
-import AllNews from './AllNews'
 import Settings from './Settings'
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
@@ -98,15 +98,18 @@ useEffect(() => {
   });
  
 }, []);
-
 useEffect(() => {
   OneSignal.init({
     appId: "a7df134b-b37d-4514-81ca-c83655d40380"
   });
 }, []);
-
 const theme=useTheme()
-
+const country=JSON.parse(localStorage.getItem("country"))
+if(!country){
+  return <div className="country">
+<Country/>
+  </div>
+}
 return (
 
 <Router>
@@ -406,31 +409,6 @@ return (
 
 <div className="app__bodyfeed">
 <Science/>
-<Star/>
-<Quickac/>
-</div>
-
-<div className="app__bodyadsence">
-
-<Adsence/>
-
-
-</div>
-
-</div>
-</Route>
-
-<Route path="/allnews">
-<Appbar/>
-
-<div className="app__body">
-<div className="app__bodynav">
-<Desktopnav/>
-
-</div>
-
-<div className="app__bodyfeed">
-<AllNews/>
 <Star/>
 <Quickac/>
 </div>
