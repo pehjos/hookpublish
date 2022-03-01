@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 
 import {  useQuery } from 'react-query'
 
-
+import SportsPP from './SportsPP'
 import Card from  './Card'
 import SportsApi from './sportsApi'
 import CardPost from  './CardPost'
@@ -67,9 +67,10 @@ comment="79"
 {/* </div>)
 } */}
 <div className="Page__div">
-
-{/* <SportsApi/> */}
+<SportsPP/>
+ 
 </div>
+
 { data && data.articles.map(post1 => (
 <Card
 
@@ -98,6 +99,7 @@ Clicks="@news"
 
 />
 ))} 
+
 </div>
 
 )
