@@ -27,7 +27,7 @@ function StoryBtn () {
 //     )
 
     const { DtaLoading, error, data } = useQuery('oData', () =>
-    fetch(`https://newsx.p.rapidapi.com/search?q=${country}&limit=30&skip=0`, {
+    fetch(`https://newsx.p.rapidapi.com/search?q=${country}&limit=20&skip=0`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "newsx.p.rapidapi.com",
