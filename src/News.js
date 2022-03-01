@@ -105,12 +105,7 @@ if(!posts?.length && !isLoading){
 }
 return (
 <div className="news">
-  {/* <div className="news_greet">
-  <h6>Good {greet}!</h6>
-{user?(<h3>{user.result._tokenResponse.firstName}</h3>):""}
- <p>Todays Trending News</ p>
- 
-  </div> */}
+<Button/>
   {recommendedPosts.map((post,index)=>(  
     
     index<2&&(
@@ -193,7 +188,7 @@ isLoading?(<div className="loader__news"> */}
 
     </div>
     
-  <Button/>
+  
     {/* <HeaderSports/> */}
     < Gallery/>
 
