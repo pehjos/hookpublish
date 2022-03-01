@@ -113,7 +113,7 @@ return (
   </div> */}
   {recommendedPosts.map((post,index)=>(  
     
-    index<3&&(
+    index<2&&(
       
       // post.tags!=="Local News"?"":(
 <CardPost post={post} setCurrentId={setCurrentId} key={post._id}
