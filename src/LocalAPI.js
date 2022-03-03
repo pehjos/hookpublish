@@ -7,7 +7,7 @@ import { Language, Link } from '@material-ui/icons'
 
 
 function StoryBtn () {
-    let news="news"
+    let news="stories"
  let country=JSON.parse(localStorage.getItem("country"))
 // news x to be intergrated
 // Premier League News
