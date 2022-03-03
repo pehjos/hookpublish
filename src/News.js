@@ -133,9 +133,10 @@ _id={post._id}
 />
 
   )))}
-   <Topics/>
-  
+    
 <Carosel/>
+   <Topics/>
+
 
   
  
