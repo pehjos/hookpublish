@@ -17,7 +17,7 @@ function Science(setCurrentId) {
 // FETCH POST
 
 const { DtaLoading, error, data } = useQuery('h', () =>
-fetch('https://saurav.tech/NewsAPI/top-headlines/category/health/in.json').then(res =>
+fetch('https://saurav.tech/NewsAPI/top-headlines/category/health/us.json').then(res =>
   res.json()
 
 )

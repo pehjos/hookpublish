@@ -12,7 +12,7 @@ function useQuery1() {
 function World(setCurrentId) {
 // FETCH POST
 const { DtaLoading, error, data } = useQuery('repoData', () =>
-fetch('https://saurav.tech/NewsAPI/top-headlines/category/general/in.json').then(res =>
+fetch('https://saurav.tech/NewsAPI/top-headlines/category/general/gb.json').then(res =>
   res.json()
 
 )
@@ -50,9 +50,9 @@ seeMore="see more..."
 articlebody={post.description}
 ProviderUrl="url"
 time={post.createdAt}
-share="100"
+share=""
 love={post.likeCount}
-comment="79"
+comment=""
 />
 ))}
 {/* </div>)

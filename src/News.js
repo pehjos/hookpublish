@@ -21,6 +21,7 @@ import Stories from 'react-insta-stories';
 import { useDispatch, useSelector } from 'react-redux';
 import CardPost from './CardPost';
 import LocalApi from './LocalAPI'
+import LocalApi2 from './LocalApi2'
 import Button from './Buttons';
 import VideoCard from './Videocard'
 import Gallery from './Gallery'
@@ -32,7 +33,9 @@ function useQuery1() {
 }
 function News(setCurrentId) {
   const history = useHistory() 
- 
+  let news="stories"
+  let country=JSON.parse(localStorage.getItem("country"))
+
 
   const home=()=>{
     history.push("/")
@@ -105,7 +108,12 @@ if(!posts?.length && !isLoading){
 }
 return (
 <div className="news">
-<Button/>
+  {/* <div className="news_greet">
+  <h6>Good {greet}!</h6>
+{user?(<h3>{user.result._tokenResponse.firstName}</h3>):""}
+ <p>Todays Trending News</ p>
+ 
+  </div> */}
   {recommendedPosts.map((post,index)=>(  
     
     index<2&&(
@@ -133,10 +141,9 @@ _id={post._id}
 />
 
   )))}
-    
-<Carosel/>
    <Topics/>
-
+  
+<Carosel/>
 
   
  
@@ -189,7 +196,7 @@ isLoading?(<div className="loader__news"> */}
 
     </div>
     
-  
+  <Button/>
     {/* <HeaderSports/> */}
     < Gallery/>
 
@@ -214,8 +221,11 @@ isLoading?(<div className="loader__news"> */}
 
 <ApiNews/>
 <Notag/>
-<LocalApi/>
+{country=="UK"||"USA"||"INDIA"?
+(<LocalApi2/>):(<LocalApi/>)
+}
 
+<LocalApi/>
 </div>
 
   <div className="apis">

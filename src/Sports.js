@@ -17,7 +17,7 @@ function Science(setCurrentId) {
 // FETCH POST
 
 const { DtaLoading, error, data } = useQuery('epData', () =>
-fetch('https://saurav.tech/NewsAPI/top-headlines/category/sports/in.json').then(res =>
+fetch('https://saurav.tech/NewsAPI/top-headlines/category/sports/gb.json').then(res =>
   res.json()
 
 )
@@ -67,7 +67,7 @@ comment="79"
 {/* </div>)
 } */}
 <div className="Page__div">
-<SportsPP/>
+
  
 </div>
 
@@ -99,7 +99,7 @@ Clicks="@news"
 
 />
 ))} 
-
+<SportsPP/>
 </div>
 
 )

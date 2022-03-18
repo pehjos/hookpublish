@@ -18,7 +18,7 @@ function Technology(setCurrentId) {
 // FETCH POST
 
 const { DtaLoading, error, data } = useQuery('repData', () =>
-fetch('https://saurav.tech/NewsAPI/top-headlines/category/technology/in.json').then(res =>
+fetch('https://saurav.tech/NewsAPI/top-headlines/category/technology/us.json').then(res =>
   res.json()
 
 )
