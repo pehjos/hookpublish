@@ -210,9 +210,9 @@ return (
 <Hidden smUp={true}>
   <Link to="/discover">
 < Explore/>
-<div className="trendlive">
+{/* <div className="trendlive">
 <p ><AdjustOutlined style={{fontSize: 10,color:'red'}} className="blinking"/> UKRAINE</p>
-</div>
+</div> */}
 </Link>
 <Menu  onClick={togleslider("right",true)}  />
 
