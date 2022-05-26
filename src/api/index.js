@@ -9,7 +9,7 @@ import Axios from "axios";
 
 const API = setup({
   
-  baseURL: 'https://vercel.com/pehjos/hookbackengine/',
+  baseURL: 'https://hookbacke.herokuapp.com/',
   
   cache: {
    
@@ -27,7 +27,7 @@ API.interceptors.request.use((req) => {
 });
 export const fetchPosts2 = async ({ pageParam = 1 }) => {
    const response = await fetch(
-       `https://vercel.com/pehjos/hookbackengine/posts?page=${pageParam}&limit=20`,
+       `https://hookbacke.herokuapp.com/posts?page=${pageParam}&limit=20`,
   
    );
    const results = await response.json();
@@ -36,7 +36,7 @@ export const fetchPosts2 = async ({ pageParam = 1 }) => {
    
    export const fetchPosts3 = async ({ pageParam = 1 }) => {
     const response = await fetch(
-        `https://vercel.com/pehjos/hookbackengine/posts?page=${pageParam}&limit=20`,
+        `https://hookbacke.herokuapp.com/posts?page=${pageParam}&limit=20`,
    
     );
     const results = await response.json();
